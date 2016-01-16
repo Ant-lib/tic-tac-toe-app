@@ -4,16 +4,39 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ant.directory | Tic-Tac-Toe game</title>
+    <title>Ant.directory | Tic-Tac-Toe AI minimax</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
 </head>
     <body>
-        
+        <div class="main_container">
+            <div class="main_controls">
+                <div class="play_game_btn"> New game </div>
+                <div class="play_new_game_again_btn"> New game </div>
+                <div class="board_message"></div>
+            </div>
+
+            <div class="board">
+                <div class="board_cell" id="0"></div>
+                <div class="board_cell" id="1"></div>
+                <div class="board_cell" id="2"></div>
+                <div class="board_cell" id="3"></div>
+                <div class="board_cell" id="4"></div>
+                <div class="board_cell" id="5"></div>
+                <div class="board_cell" id="6"></div>
+                <div class="board_cell" id="7"></div>
+                <div class="board_cell" id="8"></div>
+            </div>
+        </div>
 
         <script src="js/vendor/jquery.min.js"></script>
         <script src="js/vendor/what-input.min.js"></script>
         <script src="js/foundation.min.js"></script>
         <script src="js/app.js"></script>
+
+        <script src="js/custom/ttt.main-0.0.1.js"></script>
+        <script src="js/custom/ttt.game-logic-0.0.1.js"></script>
+        <script src="js/custom/ttt.round-logic-0.0.1.js"></script>
+        <script src="js/custom/ttt.computer-logic-0.0.1.js"></script>
     </body>
 </html>

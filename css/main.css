@@ -1,8 +1,81 @@
 /* main */
 
+.main_container {
+    height: 100%;
+    width: 900px;
+    margin: 0 auto;
+}
 
+.board {
+    height: 120px;
+    width: 120px;
+    margin: 50px auto;
+}
 
+.board_cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    cursor:pointer;
+    float:left;
+    line-height: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
 
+.main_controls {
+    margin-top: 40px;
+}
+
+.level {
+    margin: 0 15px;
+    color: #000;
+    cursor: pointer;
+}
+
+.play_game_btn {
+    width: 100px;
+    height: 30px;
+    background-color: #525F67;
+    text-align: center;
+    color: #000;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.play_game_btn:hover {
+    background-color: #526F67;
+}
+
+.play_new_game_again_btn {
+	width: 120px;
+    height: 30px;
+    background-color: #525F67;
+    text-align: center;
+    color: #000;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.play_new_game_again_btn:hover {
+    background-color: #526F67;
+}
+
+.board_message {
+    display:none;
+    color: #000;
+}
+
+.board_message > p {
+    margin:0px;
+}
 
 
 
