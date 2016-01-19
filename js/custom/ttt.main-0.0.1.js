@@ -2,12 +2,15 @@
 var currentGame = {};
 
 $(".play_game_btn").click(function() {
-    var cPlayer = new CPlayer();
-    currentGame = new Game(cPlayer);
-    cPlayer.plays(currentGame);
-    currentGame.start();
+    if(typeof currentGame !== "undefined") {
+        var cPlayer = new CPlayer();
+        currentGame = new Game(cPlayer);
+        cPlayer.plays(currentGame);
+        currentGame.start();
 
-    $('.play_game_btn').fadeOut();
+        $('.play_game_btn').css({'transition':'background-color 0.5s ease', 'opacity': '0.5'});
+        $('.play_game_btn').text('playing...');
+    }
 });
 
 $(".play_new_game_again_btn").click(function() {

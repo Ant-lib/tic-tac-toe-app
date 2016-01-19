@@ -5,15 +5,14 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ant.directory | Tic-Tac-Toe AI minimax</title>
-    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
 </head>
     <body>
         <div class="main_container">
             <div class="main_controls">
-                <div class="play_game_btn"> New game </div>
-                <div class="play_new_game_again_btn"> New game </div>
-                <div class="board_message"></div>
+                <button class="centered button play_game_btn" name="New game">New game</button>
+                <button class="centered button play_new_game_again_btn" name="Play again?">Play again?</button>
             </div>
 
             <div class="board">
@@ -26,7 +25,16 @@
                 <div class="board_cell" id="6"></div>
                 <div class="board_cell" id="7"></div>
                 <div class="board_cell" id="8"></div>
+                <!-- <div class="board_cell" id="9"></div>
+                <div class="board_cell" id="10"></div>
+                <div class="board_cell" id="11"></div>
+                <div class="board_cell" id="12"></div>
+                <div class="board_cell" id="13"></div>
+                <div class="board_cell" id="14"></div>
+                <div class="board_cell" id="15"></div> -->
             </div>
+
+            <div class="board_message"></div>
         </div>
 
         <script src="js/vendor/jquery.min.js"></script>

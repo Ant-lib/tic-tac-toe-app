@@ -1,34 +1,44 @@
 /* main */
 
+html, body {
+  height: 100% !important;
+  padding: 0px;
+  margin: 0;
+
+}
+
 .main_container {
-    height: 100%;
     width: 900px;
     margin: 0 auto;
 }
 
+.main_controls {
+    position: relative;
+    top: 30px;
+}
+
 .board {
-    height: 120px;
-    width: 120px;
+    height: 360px;
+    width: 360px;
     margin: 50px auto;
+    background: #fff;
 }
 
 .board_cell {
-    width: 40px;
-    height: 40px;
-    border: 1px solid #000;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    cursor:pointer;
-    float:left;
-    line-height: 20px;
+    width: 120px;
+    height: 120px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 2px solid #02759C;
+    background: #EBEBEB;
+    cursor: pointer;
+    float: left;
+    line-height: 110px;
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
-}
-
-.main_controls {
-    margin-top: 40px;
+    font-size: 80px;
+    font-family: Arial;
 }
 
 .level {
@@ -37,49 +47,27 @@
     cursor: pointer;
 }
 
-.play_game_btn {
-    width: 100px;
-    height: 30px;
-    background-color: #525F67;
-    text-align: center;
-    color: #000;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-}
-
-.play_game_btn:hover {
-    background-color: #526F67;
+.button {
+    width: 125px;
+    margin: 0 auto;
+    display: block;
 }
 
 .play_new_game_again_btn {
-	width: 120px;
-    height: 30px;
-    background-color: #525F67;
-    text-align: center;
-    color: #000;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
     display: none;
 }
 
-.play_new_game_again_btn:hover {
-    background-color: #526F67;
-}
-
 .board_message {
-    display:none;
-    color: #000;
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font: bold 14px Verdana, Arial, sans-serif, Georgia, "Times New Roman", Times, serif;
+    color: #315585;
 }
 
 .board_message > p {
-    margin:0px;
+    margin: 0px;
 }
-
-
-
-
-
 
 /* end main */

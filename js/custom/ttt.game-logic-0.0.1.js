@@ -48,19 +48,21 @@ var Game = function(cPlayer) {
         if(currentRound.noMoreMoves()) {
             this.state = gameState.stateCode("END");
             if(currentRound.result === "X") {
-                console.log("Human won!!!");
+                $(".board_message").html("You won!!!");
             } else if(currentRound.result === "O") {
-                console.log("Human lost!!!");
+                $(".board_message").html("You lost!!!");
             } else {
-                console.log("Draw!!!");
+                $(".board_message").html("Draw!!!");
             }
 
-            $('.play_new_game_again_btn').fadeIn();
+            $(".play_game_btn").fadeOut(500,function(){
+                $(".play_new_game_again_btn").fadeIn(700).css("display","block");
+            });
         } else {
             if(this.currentRound.turn === hTurn) {
-                console.log("Make your move");
+                $(".board_message").html("Make your move");
             } else {
-                console.log("Waiting..");
+                $(".board_message").html("Waiting...");
                 this.cPlayer.notify(cTurn);
             }
         }
